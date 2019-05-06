@@ -1,0 +1,9 @@
+$color_border: #000;
+$color_headline: blue;
+
+.container {
+  border: 3px solid $color_border;
+  h2 {
+    color: $color_headline;
+  }
+}
