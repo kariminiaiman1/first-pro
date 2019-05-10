@@ -50,57 +50,74 @@
 </head>
 
 <body>
-    <header class="header-area">
-        <div class="top-header-area">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-6">
-                        <div class="top-header-content">
-                            <a href="#"><i class="icon_mail"></i> <span>info.colorlib@gmail.com</span></a>
-                            <a href="#"><i class="icon_phone"></i> <span>(12) 345 6789</span></a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="top-header-content">
-                            <div class="top-social-area ml-auto">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-header-area animated">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <nav class="classy-navbar justify-content-between" id="rehomesNav">
-                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-                        <div class="classy-menu">
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-                            <div class="classynav">
-                                <ul id="nav">
-                                  <li><a href="http://localhost:8000/">Home</a></li>
+  <header class="header-area">
+      <!-- Top Header Area Start -->
+      <div class="top-header-area">
+          <div class="container h-100">
+              <div class="row h-100 align-items-center">
+                  <div class="col-6">
+                      <div class="top-header-content">
+                          <a href="#"><i class="icon_mail"></i> <span>info@ejarekade.com</span></a>
+                          <a href="#"><i class="icon_phone"></i> <span>(0921) 743 5023</span></a>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="top-header-content">
+                          <!-- Top Social Area -->
+                          <div class="top-social-area ml-auto">
+                              <a href="https://www.facebook.com/ejare.kade.9"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                              <a href="https://twitter.com/ejarekade1398"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                              <a href="https://www.linkedin.com/in/ejare-kade-722110184/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                              <a href="https://www.instagram.com/ejarekade1398/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Top Header Area End -->
+
+      <!-- Main Header Start -->
+      <div class="main-header-area animated">
+          <div class="classy-nav-container breakpoint-off">
+              <div class="container">
+                  <!-- Classy Menu -->
+                  <nav class="classy-navbar justify-content-between" id="rehomesNav">
+
+                      <!-- Logo -->
+                      <a class="nav-brand" href="./index.html"><img src="./img/logo.png" width="240" alt=""></a>
+
+                      <!-- Navbar Toggler -->
+                      <div class="classy-navbar-toggler">
+                          <span class="navbarToggler"><span></span><span></span><span></span></span>
+                      </div>
+
+                      <!-- Menu -->
+                      <div class="classy-menu">
+                          <!-- Menu Close Button -->
+                          <div class="classycloseIcon">
+                              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                          </div>
+                          <!-- Nav Start -->
+                          <div class="classynav">
+                              <ul id="nav">
+                                <li><a href="http://localhost:8000/submit-ads">submit-ads</a></li>
                                   <li><a href="http://localhost:8000/register">Login / Sign up</a></li>
-                                  <li class="active"><a href="http://localhost:8000/submit-ads">submit-ads</a></li>
-                                </ul>
-                                <div class="contact-btn mt-3 mt-lg-0 ml-3 ml-lg-5">
-                                    <a href="#">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+                                  <li class="active"><a href="http://localhost:8000/">Home</a></li>
+                              </ul>
+
+                              <!-- Contact btn -->
+                              <div class="contact-btn mt-3 mt-lg-0 ml-3 ml-lg-5">
+                                  <a href="#">Contact Us</a>
+                              </div>
+                          </div>
+                          <!-- Nav End -->
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
     <div class="rehomes-search-form-area0 wow fadeInUp" data-wow-delay="200ms">
         <div class="container">
           <div class="row">
@@ -173,112 +190,109 @@
           </div>
         </div>
       </div>
-    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0" style="background-image: url(img/bg-img/17.jpg);">
-        <!-- Main Footer Area -->
-        <div class="main-footer-area">
-            <div class="container">
-                <div class="row justify-content-between">
+      <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0" style="background-image: url(img/bg-img/17.jpg);">
+          <!-- Main Footer Area -->
+          <div class="main-footer-area">
+              <div class="container">
+                  <div class="row justify-content-between">
 
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-80">
-                            <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="img/core-img/logo-2.png" alt=""></a>
+                      <!-- Footer Widget Area -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                          <div class="single-footer-widget mb-80">
+                              <!-- Footer Logo -->
+                              <a href="#" class="footer-logo"><img src="../img/logo.png" alt=""></a>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                              <p>Ejarekade site is the first and only specialized rental site in Iran that has begun its activities. You are welcome visitor to place all your ads for free on the site and use all the facilities of the site for free.</p>
+                              <!-- Social Info -->
+                              <div class="social-info">
+                                  <a href="https://www.facebook.com/ejare.kade.9"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                  <a href="https://twitter.com/ejarekade1398"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                  <a href="https://www.linkedin.com/in/ejare-kade-722110184/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                  <a href="https://www.instagram.com/ejarekade1398/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                             </div>
-                        </div>
-                    </div>
+                          </div>
+                      </div>
 
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-80">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Get info</h5>
+                      <!-- Footer Widget Area -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                          <div class="single-footer-widget mb-80">
+                              <!-- Widget Title -->
+                              <h5 class="widget-title">Get info</h5>
 
-                            <!-- Contact Area -->
-                            <div class="footer-contact">
-                                <p>Phone: <span>(12) 345 6789</span></p>
-                                <p>Email: <span>colorlib.info@gmail.com</span></p>
-                                <p>Address: <span>Iris Watson, Box 283 8562 Fusce Rd, NY</span></p>
-                            </div>
-                        </div>
-                    </div>
+                              <!-- Contact Area -->
+                              <div class="footer-contact">
+                                  <p>Phone: <span>(098921) 743 5023</span></p>
+                                  <p>Email: <span>info@ejarekade.com</span></p>
+                                  <p>Address: <span>Iran - Teharan</span></p>
+                              </div>
+                          </div>
+                      </div>
 
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-80">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Property Cities</h5>
+                      <!-- Footer Widget Area -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                          <div class="single-footer-widget mb-80">
+                              <!-- Widget Title -->
+                              <h5 class="widget-title">Property Cities</h5>
 
-                            <!-- Footer Nav -->
-                            <ul class="footer-nav d-flex flex-wrap">
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Kalima</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Austin</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Mianma</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Mahatan</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chicago</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Mehico</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Mahatan</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> New York</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                              <!-- Footer Nav -->
+                              <ul class="footer-nav d-flex flex-wrap">
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Tehran</a></li>
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Alborz</a></li>
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Boushehr</a></li>
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Kordestan</a></li>
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Mashhad</a></li>
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Esfehan</a></li>
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Khoozestan</a></li>
+                                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Mazandaran</a></li>
+                              </ul>
+                          </div>
+                      </div>
 
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-80">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Newsletter</h5>
+                      <!-- Footer Widget Area -->
+                      <div class="col-12 col-sm-6 col-lg-3">
+                          <div class="single-footer-widget mb-80">
+                              <!-- Widget Title -->
+                              <h5 class="widget-title">Newsletter</h5>
 
-                            <p>Subscribe our newsletter gor get notification about new updates, count, etc.</p>
-                            <!-- Newsletter Form -->
-                            <form action="index.html" class="nl-form">
-                                <input type="email" name="nl-email" class="form-control" placeholder="Enter your email...">
-                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                              <p>Subscribe our newsletter gor get notification about new updates, count, etc.</p>
+                              <!-- Newsletter Form -->
+                              <form action="index.html" class="nl-form">
+                                  <input type="email" name="nl-email" class="form-control" placeholder="Enter your email...">
+                                  <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-        <!-- Copywrite Area -->
-        <div class="copywrite-content">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Copywrite Text -->
-                    <div class="col-12 col-sm-6">
-                        <div class="copywrite-text">
-                            <p>Copyright &copy;
-                            <script>
-                            document.write(new Date().getFullYear());
-                            </script>
-                              All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            </p>
-                        </div>
-                    </div>
+          <!-- Copywrite Area -->
+          <div class="copywrite-content">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <!-- Copywrite Text -->
+                      <div class="col-12 col-sm-6">
+                          <div class="copywrite-text">
+                              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Web Designer( Laravel ) & seo <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Iman Karimi Nia</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                          </div>
+                      </div>
 
-                    <!-- Footer Menu -->
-                    <div class="col-12 col-sm-6">
-                        <div class="footer-menu">
-                            <ul class="nav">
-                              <li><a href="http://localhost:8000/">Home</a></li>
-                              <li><a href="http://localhost:8000/register">Login / Sign up</a></li>
-                              <li class="active"><a href="http://localhost:8000/submit-ads">submit-ads</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+                      <!-- Footer Menu -->
+                      <div class="col-12 col-sm-6">
+                          <div class="footer-menu">
+                              <ul class="nav">
+                                  <li><a href="http://localhost:8000/">Home</a></li>
+                                  <li><a href="http://localhost:8000/register">Login/Sign Up</a></li>
+                                  <li><a href="http://localhost:8000/submit-ads">submit-ads</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
     <script>
         $('.selectpicker').selectpicker({
           liveSearch: true
