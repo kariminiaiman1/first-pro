@@ -32,8 +32,9 @@
     border-radius: 5px;
     height: 32px;
     }
+
     button.btn.dropdown-toggle.btn-light {
-    background: #92c800;
+    background: #ff0000;
     }
     .dropdown.bootstrap-select {
     background: red;
@@ -103,7 +104,7 @@
     <div class="rehomes-search-form-area0 wow fadeInUp" data-wow-delay="200ms">
         <div class="container">
           <div class="row">
-            
+
             <div class="col-lg-6 col-md-6 col-sx-6">
               <label>Title</label>
               <input type="text" name="title">

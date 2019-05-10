@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Rehomes - Real Estate HTML Template</title>
+    <title>اجاره کده - اجاره ملک، خودرو، ویلا، سوئیت و ...</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="../img/core-img/favicon.png">
+    <link rel="icon" href="../img/favicon.png">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css">
@@ -59,7 +59,7 @@
                     <nav class="classy-navbar justify-content-between" id="rehomesNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="./index.html"><img src="./img/logo.png" width="240" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
