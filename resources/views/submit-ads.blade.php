@@ -118,10 +118,10 @@
           </div>
       </div>
   </header>
-    <div class="rehomes-search-form-area0 wow fadeInUp" data-wow-delay="200ms">
+    <div class="rehomes-search-form-area0 wow fadeInUp" data-wow-delay="200ms" style="background:#cdcdcd">
         <div class="container">
           <div class="row">
-
+            <hr>
             <div class="col-lg-6 col-md-6 col-sx-6">
               <label>Title</label>
               <input type="text" name="title">
