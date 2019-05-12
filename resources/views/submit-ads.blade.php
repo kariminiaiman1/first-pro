@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rehomes - Real Estate HTML Template</title>
-    <link rel="icon" href="../img/core-img/favicon.png">
+    <link rel="icon" href="../img/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -128,7 +128,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sx-6">
               <label>Description</label>
-              <input type="text" name="description">
+              <input type="text" name="description" >
             </div>
             <hr>
                 <div class="col-lg-6 col-md-6 col-sx-6">

@@ -20,3 +20,6 @@ Route::get('/register', function () {
 Route::get('/submit-ads', function () {
     return view('submit-ads');
 });
+Route::get('/hello',function(){
+  return 'hello iman';
+});
