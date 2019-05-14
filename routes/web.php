@@ -12,14 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/register', function () {
+//     return view('register');
+// });
 Route::get('/submit-ads', function () {
     return view('submit-ads');
 });
 Route::get('/hello',function(){
   return 'hello iman';
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
