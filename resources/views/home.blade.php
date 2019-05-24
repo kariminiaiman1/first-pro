@@ -146,10 +146,11 @@
                             <p>city: <span>{{ $task->city }}</span></p>
                         </div>
                     </div>
-
+<!-- Auth::user()->id == $task->user_id -->
+<!-- <a href="http://localhost:8000/edit/{{$task->id}}">edit</a> | <a href="http://localhost:8000/delete/{{$task->id}}">delete</a> -->
                     <!-- Property Price -->
                     <div class="property-price">
-                        <p class="badge-rent">@guest For Rent @if (Route::has('register')) @endif @else <a href="http://localhost:8000/edit/{{$task->id}}">edit</a> | <a href="http://localhost:8000/delete/{{$task->id}}">delete</a>  @endguest</p>
+                        <p class="badge-rent">@guest Rent @if (Route::has('register')) | Sell  @endif @elseif (Auth::user()->name == $task->name) <a href="http://localhost:8000/edit/{{$task->id}}">Edit</a> | <a href="http://localhost:8000/delete/{{$task->id}}">Delete</a> @else Rent | Sell @endguest </p>
                         <p class="price">{{$task->price}} تومان</p>
                     </div>
                 </div>
