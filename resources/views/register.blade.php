@@ -27,7 +27,7 @@
                 <br>
                 <div class="col-lg-8 col-md-8 col-sx-8">
                 <label for="number" style="color:white;">Phone Number:</label>
-                <input class="form-control" type="number" name="number" placeholder="phone number" />
+                <input class="form-control" type="phone" name="number" placeholder="phone number" />
                 </div>
                 <br>
                 <div class="col-lg-8 col-md-8 col-sx-8">

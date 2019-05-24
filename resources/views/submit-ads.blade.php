@@ -17,53 +17,59 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBumVN_dqWquRFkx1Hj-GzBLoZU_adFne0"></script>
     <script type="text/javascript" src="../js/jquery.googlemap.js"></script>
     <style>
-    label {
-    color: white;
-    display: inline-block;
-    margin-bottom: .5rem;
-    background: #2a303b;
-    padding: 5px;
-    border-radius: 6px;
-    width: 150px;
-    }
-    input {
-    overflow: visible;
-    border: 1px solid #2a303b;
-    border-radius: 5px;
-    height: 32px;
-    }
+        label {
+          color: white;
+          display: inline-block;
+          margin-bottom: .5rem;
+          background: #2a303b;
+          padding: 5px;
+          border-radius: 6px;
+          width: 150px;
+          }
 
-    button.btn.dropdown-toggle.btn-light {
-    background: #ff0000;
-    }
-    .dropdown.bootstrap-select {
-    background: red;
-    }
-    hr{
-      width: 100%;
-    }
-      #map {
-        height: 400px;
-        width: 100%;
-       }
+        input {
+          overflow: visible;
+          border: 1px solid #2a303b;
+          border-radius: 5px;
+          height: 32px;
+          }
+
+        button.btn.dropdown-toggle.btn-light {
+          background: #ff0000;
+          }
+
+        .dropdown.bootstrap-select {
+          background: red;
+          }
+
+        hr{
+          width: 100%;
+        }
+
+        #map {
+          height: 400px;
+          width: 100%;
+         }
+
+         label{
+           display: inline-block !important;
+         }
     </style>
 </head>
 
 <body>
   <header class="header-area">
-      <!-- Top Header Area Start -->
       <div class="top-header-area">
           <div class="container h-100">
               <div class="row h-100 align-items-center">
                   <div class="col-6">
                       <div class="top-header-content">
                           <a href="#"><i class="icon_mail"></i> <span>info@ejarekade.com</span></a>
-                          <a href="#"><i class="icon_phone"></i> <span>(0921) 743 5023</span></a>
+                          <a href="#"><i class="icon_phone"></i> <span>(098921) 743 5023</span></a>
                       </div>
                   </div>
                   <div class="col-6">
                       <div class="top-header-content">
-                          <!-- Top Social Area -->
                           <div class="top-social-area ml-auto">
                               <a href="https://www.facebook.com/ejare.kade.9"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                               <a href="https://twitter.com/ejarekade1398"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -75,65 +81,95 @@
               </div>
           </div>
       </div>
-      <!-- Top Header Area End -->
-
-      <!-- Main Header Start -->
       <div class="main-header-area animated">
           <div class="classy-nav-container breakpoint-off">
-              <div class="container">
-                  <!-- Classy Menu -->
-                  <nav class="classy-navbar justify-content-between" id="rehomesNav">
-
-                      <!-- Logo -->
-                      <a class="nav-brand" href="./index.html"><img src="./img/logo.png" width="240" alt=""></a>
-
-                      <!-- Navbar Toggler -->
-                      <div class="classy-navbar-toggler">
-                          <span class="navbarToggler"><span></span><span></span><span></span></span>
-                      </div>
-
-                      <!-- Menu -->
-                      <div class="classy-menu">
-                          <!-- Menu Close Button -->
-                          <div class="classycloseIcon">
-                              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                          </div>
-                          <!-- Nav Start -->
-                          <div class="classynav">
-                              <ul id="nav">
-                                <li><a href="http://localhost:8000/submit-ads">submit-ads</a></li>
-                                  <li><a href="http://localhost:8000/register">Login / Sign up</a></li>
-                                  <li class="active"><a href="http://localhost:8000/">Home</a></li>
-                              </ul>
-
-                              <!-- Contact btn -->
-                              <div class="contact-btn mt-3 mt-lg-0 ml-3 ml-lg-5">
-                                  <a href="#">Contact Us</a>
-                              </div>
-                          </div>
-                          <!-- Nav End -->
-                      </div>
-                  </nav>
-              </div>
-          </div>
+          <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+                <div class="container">
+                    <a class="nav-brand" href="{{ url('/') }}">
+                      <img src="./img/logo.png" width="240" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                          @guest
+                              <li style="background: #ac13f7;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item ">
+                                  <a id="navbarDropdown" class="nav-link" href="#">Contact Us</a>
+                              </li>
+                              <li style="background: #6868f5;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item ">
+                                  <a id="navbarDropdown" class="nav-link" href="#">About Us</a>
+                              </li>
+                              <li style="background: #32ccfe;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                  <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                              </li>
+                              @if (Route::has('register'))
+                              <li style="background: #00cc00;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                              </li>
+                              <li style="background: #dede19;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                <a class="nav-link" href="">{{ __('Category')}}</a>
+                              </li>
+                              <li style="background: #ff6600;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                <a class="nav-link" href="http://localhost:8000/submit-ads">{{ __('Send Free Ads')}}</a>
+                              </li>
+                              <li style="background: #fe0000;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                <a class="nav-link" href="http://localhost:8000/">{{__('Home')}}</a>
+                              </li>
+                              @endif
+                          @else
+                              <li style="background: #ac13f7;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item ">
+                                  <a id="navbarDropdown" class="nav-link" href="#">Contact Us</a>
+                              </li>
+                              <li style="background: #6868f5;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item ">
+                                  <a id="navbarDropdown" class="nav-link" href="#">About Us</a>
+                              </li>
+                              <li style="background: #32ccfe;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item ">
+                                  <a id="navbarDropdown" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                      {{ Auth::user()->name }} <span class="caret"></span>
+                                  </a>
+                              </li>
+                              <li style="background: #00cc00;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item ">
+                                  <a class="nav-link" href="{{ route('logout') }}"
+                                     onclick="event.preventDefault();
+                                                   document.getElementById('logout-form').submit();">
+                                      {{ __('Logout') }}
+                                  </a>
+                                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                      @csrf
+                                  </form>
+                              </li>
+                              <li style="background: #dede19;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                <a class="nav-link" href="">{{ __('Category')}}</a>
+                              </li>
+                              <li style="background: #ff6600;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                <a class="nav-link" href="http://localhost:8000/submit-ads">{{ __('Send Free Ads')}}</a>
+                              </li>
+                              <li style="background: #fe0000;margin:0px 1px; border-radius: 7px;padding: 2px;" class="nav-item">
+                                <a class="nav-link" href="http://localhost:8000/">Home</a>
+                              </li>
+                          @endguest
+                      </ul>
+                    </div>
+                </div>
+            </nav>
       </div>
-  </header>
+    </header>
     <div class="rehomes-search-form-area0 wow fadeInUp" data-wow-delay="200ms" style="background:#cdcdcd">
         <div class="container">
           <div class="row">
-            <hr>
-            <div class="col-lg-6 col-md-6 col-sx-6">
-              <label>Title</label>
-              <input type="text" name="title">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sx-6">
-              <label>Description</label>
-              <input type="text" name="description" >
-            </div>
-            <hr>
+                <hr>
+                <form class="form-inline" action="/create" enctype="multipart/form-data" method="POST">
+                   {{ csrf_field() }}
+                <div class="col-lg-6 col-md-6 col-sx-6">
+                  <label>Title</label>
+                  <input type="text" name="title">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sx-6">
+                  <label style="float: left;">Description</label>
+                  <textarea style="float: left;width: 42%;border: 1px solid #2a303b;border-radius: 5px;" name="description"></textarea>
+                </div>
+                <hr>
                 <div class="col-lg-6 col-md-6 col-sx-6">
                   <label>State</label>
-                  <select class="selectpicker">
+                  <select name="state" class="selectpicker">
                     <option>Mustard</option>
                     <option>Ketchup</option>
                     <option>Barbecue</option>
@@ -141,7 +177,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sx-6">
                   <label>City</label>
-                  <select class="selectpicker">
+                  <select name="city" class="selectpicker">
                     <option>Mustard</option>
                     <option>Ketchup</option>
                     <option>Barbecue</option>
@@ -150,7 +186,7 @@
                 <hr>
                 <div class="col-lg-6 col-md-6 col-sx-6">
                   <label>Category</label>
-                  <select class="selectpicker">
+                  <select name="category" class="selectpicker">
                     <option>Mustard</option>
                     <option>Ketchup</option>
                     <option>Barbecue</option>
@@ -158,7 +194,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sx-6">
                   <label>Sub Category</label>
-                  <select class="selectpicker">
+                  <select name="subcategory" class="selectpicker">
                     <option>Mustard</option>
                     <option>Ketchup</option>
                     <option>Barbecue</option>
@@ -167,7 +203,7 @@
                 <hr>
                 <div class="col-lg-6 col-md-6 col-sx-6">
                   <label>Phone</label>
-                  <input type="number" name="number">
+                  <input type="number" name="phone">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sx-6">
                   <label>Price</label>
@@ -175,35 +211,35 @@
                 </div>
                 <hr>
                 <div class="col-lg-6 col-md-6 col-sx-6">
-                  <label>Address</label>
-                  <div id="map" style="width: 600px; height: 300px;"></div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sx-6">
                   <label>Image</label>
-                  <input type="file" size="20" id="imageUpload" class=" ">
+                  <input type="file" name="image[]" multiple="multiple">
+                  <!-- <input type="file" size="20" id="imageUpload" class=" "> -->
                 </div>
                 <hr>
                 <div class="col-lg-6 col-md-6 col-sx-6">
-                  <input style="background:#93ca00;color:white;padding-left:30px;padding-right:30px;padding-bottom: 7px;padding-top: 5px;" type="submit" value="submit">
+                  <label>Address</label>
+                  <div id="map" style="width: 600px; height: 300px;margin:4px 0px;"></div>
+                  <input  type="text" id="latitude"  name="latitude">
+                  <input  type="text" id="longitude"  name="longitude">
                 </div>
+                <hr>
+                <div class="col-lg-6 col-md-6 col-sx-6">
+                  <!-- <input style="background:#93ca00;color:white;padding-left:30px;padding-right:30px;padding-bottom: 7px;padding-top: 5px;" type="submit" value="submit"> -->
+                    <button value="submit">submit</button>
+                </div>
+              </form>
                 <hr>
           </div>
         </div>
       </div>
-      <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0" style="background-image: url(img/bg-img/17.jpg);">
-          <!-- Main Footer Area -->
+      <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0" style="background-image: url(./img/bg-img/17.jpg);">
           <div class="main-footer-area">
               <div class="container">
                   <div class="row justify-content-between">
-
-                      <!-- Footer Widget Area -->
                       <div class="col-12 col-sm-6 col-lg-3">
                           <div class="single-footer-widget mb-80">
-                              <!-- Footer Logo -->
                               <a href="#" class="footer-logo"><img src="../img/logo.png" alt=""></a>
-
                               <p>Ejarekade site is the first and only specialized rental site in Iran that has begun its activities. You are welcome visitor to place all your ads for free on the site and use all the facilities of the site for free.</p>
-                              <!-- Social Info -->
                               <div class="social-info">
                                   <a href="https://www.facebook.com/ejare.kade.9"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                   <a href="https://twitter.com/ejarekade1398"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -212,14 +248,9 @@
                             </div>
                           </div>
                       </div>
-
-                      <!-- Footer Widget Area -->
                       <div class="col-12 col-sm-6 col-lg-3">
                           <div class="single-footer-widget mb-80">
-                              <!-- Widget Title -->
                               <h5 class="widget-title">Get info</h5>
-
-                              <!-- Contact Area -->
                               <div class="footer-contact">
                                   <p>Phone: <span>(098921) 743 5023</span></p>
                                   <p>Email: <span>info@ejarekade.com</span></p>
@@ -227,14 +258,10 @@
                               </div>
                           </div>
                       </div>
-
-                      <!-- Footer Widget Area -->
                       <div class="col-12 col-sm-6 col-lg-3">
                           <div class="single-footer-widget mb-80">
                               <!-- Widget Title -->
                               <h5 class="widget-title">Property Cities</h5>
-
-                              <!-- Footer Nav -->
                               <ul class="footer-nav d-flex flex-wrap">
                                   <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Tehran</a></li>
                                   <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Alborz</a></li>
@@ -247,15 +274,10 @@
                               </ul>
                           </div>
                       </div>
-
-                      <!-- Footer Widget Area -->
                       <div class="col-12 col-sm-6 col-lg-3">
                           <div class="single-footer-widget mb-80">
-                              <!-- Widget Title -->
                               <h5 class="widget-title">Newsletter</h5>
-
                               <p>Subscribe our newsletter gor get notification about new updates, count, etc.</p>
-                              <!-- Newsletter Form -->
                               <form action="index.html" class="nl-form">
                                   <input type="email" name="nl-email" class="form-control" placeholder="Enter your email...">
                                   <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
@@ -265,27 +287,27 @@
                   </div>
               </div>
           </div>
-
-          <!-- Copywrite Area -->
           <div class="copywrite-content">
               <div class="container">
                   <div class="row align-items-center">
-                      <!-- Copywrite Text -->
                       <div class="col-12 col-sm-6">
                           <div class="copywrite-text">
-                              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Web Designer( Laravel ) & seo <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Iman Karimi Nia</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                              <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());
+                                </script> Web Designer( Laravel ) & seo
+                                <i class="fa fa-heart-o" aria-hidden="true">
+                                </i> by
+                                <a href="#" target="_blank">Iman Karimi Nia</a>
+                              </p>
                           </div>
                       </div>
-
-                      <!-- Footer Menu -->
                       <div class="col-12 col-sm-6">
                           <div class="footer-menu">
                               <ul class="nav">
                                   <li><a href="http://localhost:8000/">Home</a></li>
-                                  <li><a href="http://localhost:8000/register">Login/Sign Up</a></li>
-                                  <li><a href="http://localhost:8000/submit-ads">submit-ads</a></li>
+                                  <li><a href="http://localhost:8000/register">Register</a></li>
+                                  <li><a href="http://localhost:8000/submit-ads">Send Free Ads</a></li>
                               </ul>
                           </div>
                       </div>
@@ -307,6 +329,7 @@
         	success: function(e) {
         	    $("#latitude").val(e.lat);
         	    $("#longitude").val(e.lon);
+              
         	}
     	});
       })

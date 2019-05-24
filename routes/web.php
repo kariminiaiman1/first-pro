@@ -11,19 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-// Route::get('/register', function () {
-//     return view('register');
-// });
-Route::get('/submit-ads', function () {
-    return view('submit-ads');
-});
-Route::get('/hello',function(){
-  return 'hello iman';
-});
+Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth']], function() {
+  Route::get('/submit-ads', function () {
+      return view('submit-ads');
+  });
+});
+Route::post('create', 'advertise@create');

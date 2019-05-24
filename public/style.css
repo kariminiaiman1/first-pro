@@ -74,7 +74,18 @@ h6 {
   color: #2a303b;
   line-height: 1.25;
   font-weight: 700; }
-
+main.py-4{
+  padding: 0px 0px !important;
+}
+header.header-area{
+      border-bottom: 1px solid #cdcdcd !important;
+}
+.nav-link {
+    font-weight: bold;
+}
+.property-thumb{
+  height:300px !important;
+}
 a {
   color: #2a303b;
   text-decoration: none;
@@ -111,7 +122,6 @@ ul {
   ul li {
     margin: 0;
     padding: 0; }
-
 .bg-overlay {
   position: relative;
   z-index: 1; }
@@ -2860,5 +2870,8 @@ input:invalid {
   height: 4px; }
   .rehomes-property-sidebar-area .property-search-form-area .slider-range .ui-slider-horizontal .ui-slider-handle {
     margin-left: 0; }
+    .mapsshow{
+      display: none;
+    }
 
 /*# sourceMappingURL=style.css.map */
