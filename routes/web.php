@@ -21,5 +21,9 @@ Route::group(['middleware' => ['auth']], function() {
   Route::get('/submit-ads', function () {
       return view('submit-ads');
   });
+  Route::get('/delete/{ads}', 'HomeController@destroy');
+  Route::get('/edit/{ads}', 'HomeController@edit');
+  Route::post('/update/{ads}', 'HomeController@update');
 });
 Route::post('create', 'advertise@create');
+Route::get('search', 'HomeController@search');

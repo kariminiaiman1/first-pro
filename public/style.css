@@ -80,6 +80,9 @@ main.py-4{
 header.header-area{
       border-bottom: 1px solid #cdcdcd !important;
 }
+#slider-range{
+  background: red;
+}
 .nav-link {
     font-weight: bold;
 }
