@@ -907,7 +907,7 @@ input:invalid {
       border-radius: 50%;
       border: none;
       top: 3px;
-      right: 3px;
+      left: 3px;
       color: #ffffff;
       background-color: #ff0000;
       cursor: pointer;
@@ -1183,7 +1183,6 @@ input:invalid {
     z-index: 1;
     padding: 20px 30px; }
     .single-property-area .property-desc-area .property-title-seller {
-      border-bottom: 1px solid #e5e5e5;
       padding-bottom: 20px; }
       .single-property-area .property-desc-area .property-title-seller .property-title h4 {
         font-size: 20px;

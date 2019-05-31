@@ -32,7 +32,7 @@ class advertise extends Controller
                 $image->move($destinationPath, $filename);
                 array_push($names, $filename);
             }
-            $sdf->img=$names[1];
+            $sdf->img=$names[0];
             $sdf->imgs= json_encode($names);
         }else {
           $sdf->img="default.jpg";

@@ -17,8 +17,8 @@
     transition-duration: 500ms;
     text-decoration: none;
     outline: none;
-    font-size: 14px;
-    color: #232323;
+    font-size: 15px;
+    color: #ffffff;
     display: inline-block; }
     .classy-nav-container a:hover, .classy-nav-container a:focus {
       -webkit-transition-duration: 500ms;
